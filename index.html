@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Chess</title>
+</head>
+
+<body>
+    <div id="main">
+        <div id="game">
+            <div id="board">
+                <div id="square1" class="white"><img class="b rook" id="1" src="black-rook.png" draggable="true"></div>
+                <div id="square2" class="black"><img class="b knight" id="1" src="black-knight.png" draggable="true"></div>
+                <div id="square3" class="white"><img class="b bishop" id="1" src="black-bishop.png" draggable="true"></div>
+                <div id="square4" class="black"><img class="b queen" id="1" src="black-queen.png" draggable="true"></div>
+                <div id="square5" class="white"><img class="b king" src="black-king.png" draggable="true"></div>
+                <div id="square6" class="black"><img class="b bishop" id="2" src="black-bishop.png" draggable="true"></div>
+                <div id="square7" class="white"><img class="b knight" id="2" src="black-knight.png" draggable="true"></div>
+                <div id="square8" class="black"><img class="b rook" id="2" src="black-rook.png" draggable="true"></div>
+                <div id="square9" class="black"><img class="b pawn" id="1" src="black-pawn.png" draggable="true"></div>
+                <div id="square10" class="white"><img class="b pawn" id="2" src="black-pawn.png" draggable="true"></div>
+                <div id="square11" class="black"><img class="b pawn" id="3" src="black-pawn.png" draggable="true"></div>
+                <div id="square12" class="white"><img class="b pawn" id="4" src="black-pawn.png" draggable="true"></div>
+                <div id="square13" class="black"><img class="b pawn" id="5" src="black-pawn.png" draggable="true"></div>
+                <div id="square14" class="white"><img class="b pawn" id="6" src="black-pawn.png" draggable="true"></div>
+                <div id="square15" class="black"><img class="b pawn" id="7" src="black-pawn.png" draggable="true"></div>
+                <div id="square16" class="white"><img class="b pawn" id="8" src="black-pawn.png" draggable="true"></div>
+                <div id="square17" class="white"></div>
+                <div id="square18" class="black"></div>
+                <div id="square19" class="white"></div>
+                <div id="square20" class="black"></div>
+                <div id="square21" class="white"></div>
+                <div id="square22" class="black"></div>
+                <div id="square23" class="white"></div>
+                <div id="square24" class="black"></div>
+                <div id="square25" class="black"></div>
+                <div id="square26" class="white"></div>
+                <div id="square27" class="black"></div>
+                <div id="square28" class="white"></div>
+                <div id="square29" class="black"></div>
+                <div id="square30" class="white"></div>
+                <div id="square31" class="black"></div>
+                <div id="square32" class="white"></div>
+                <div id="square33" class="white"></div>
+                <div id="square34" class="black"></div>
+                <div id="square35" class="white"></div>
+                <div id="square36" class="black"></div>
+                <div id="square37" class="white"></div>
+                <div id="square38" class="black"></div>
+                <div id="square39" class="white"></div>
+                <div id="square40" class="black"></div>
+                <div id="square41" class="black"></div>
+                <div id="square42" class="white"></div>
+                <div id="square43" class="black"></div>
+                <div id="square44" class="white"></div>
+                <div id="square45" class="black"></div>
+                <div id="square46" class="white"></div>
+                <div id="square47" class="black"></div>
+                <div id="square48" class="white"></div>
+                <div id="square49" class="white"><img class="w pawn" id="1" src="white-pawn.png" draggable="true"></div>
+                <div id="square50" class="black"><img class="w pawn" id="2" src="white-pawn.png" draggable="true"></div>
+                <div id="square51" class="white"><img class="w pawn" id="3" src="white-pawn.png" draggable="true"></div>
+                <div id="square52" class="black"><img class="w pawn" id="4" src="white-pawn.png" draggable="true"></div>
+                <div id="square53" class="white"><img class="w pawn" id="5" src="white-pawn.png" draggable="true"></div>
+                <div id="square54" class="black"><img class="w pawn" id="6" src="white-pawn.png" draggable="true"></div>
+                <div id="square55" class="white"><img class="w pawn" id="7" src="white-pawn.png" draggable="true"></div>
+                <div id="square56" class="black"><img class="w pawn" id="8" src="white-pawn.png" draggable="true"></div>
+                <div id="square57" class="black"><img class="w rook" id="1" src="white-rook.png" draggable="true"></div>
+                <div id="square58" class="white"><img class="w knight" id="1" src="white-knight.png" draggable="true"></div>
+                <div id="square59" class="black"><img class="w bishop" id="1" src="white-bishop.png" draggable="true"></div>
+                <div id="square60" class="white"><img class="w queen" id="1" src="white-queen.png" draggable="true"></div>
+                <div id="square61" class="black"><img class="w king" src="white-king.png" draggable="true"></div>
+                <div id="square62" class="white"><img class="w bishop" id="2" src="white-bishop.png" draggable="true"></div>
+                <div id="square63" class="black"><img class="w knight" id="2" src="white-knight.png" draggable="true"></div>
+                <div id="square64" class="white"><img class="w rook" id="2" src="white-rook.png" draggable="true">
+                </div>
+            </div>
+            <h1>Turn: white</h1>
+        </div>
+        <div id="pieces">
+            <div id="buttons">
+                <button id="previous-move">&#10096;</button>
+                <button id="next-move">&#10097;</button>
+            </div>
+            <div id="white-taken-pieces"></div>
+            <div id="black-taken-pieces"></div>
+        </div>
+    </div>
+</body>
+<script src="functions.js"></script>
+<script src="script.js"></script>
+
+</html>

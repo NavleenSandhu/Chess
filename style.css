@@ -1,0 +1,52 @@
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#main{
+    display: flex;
+}
+#game , #pieces{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#pieces{
+    width: 360px;
+    height: 720px;
+}
+#buttons{
+    display:flex ;
+}
+#buttons button{
+    height: 150px;
+    width: 125px;
+    font-size: 100px;
+}
+#white-taken-pieces , #black-taken-pieces{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#board{
+    height: 720px;
+    width: 720px;
+    display: grid;
+    grid-template-columns: 90px 90px 90px 90px 90px 90px 90px 90px;
+    border: 2px solid  rgb(178, 161, 123);
+}
+#board div{
+    height: 90px;
+    width: 90px;
+}
+.black{
+    background-color: rgb(178, 161, 123);
+}
+.white{
+    background-color: white;
+}
+img{
+    height: 80px;
+    width: 80px;
+    margin: 5px;
+}
