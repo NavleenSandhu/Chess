@@ -1,5 +1,5 @@
 setBoard()
-
+alert("Drag pieces to move")
 let boardSquares = board.querySelectorAll("div")
 boardSquares.forEach(function (square) {
     square.addEventListener('dragstart', dragStart)
